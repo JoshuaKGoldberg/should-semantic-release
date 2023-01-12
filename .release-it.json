@@ -1,0 +1,13 @@
+{
+	"git": {
+		"commitMessage": "chore: release v${version}",
+		"requireCommits": true
+	},
+	"github": {
+		"release": true,
+		"releaseName": "v${version}"
+	},
+	"hooks": {
+		"before:bump": "echo hihihihihi"
+	}
+}
