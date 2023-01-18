@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import { shouldSemanticRelease } from "../lib/index.js";
+import { shouldSemanticReleaseCLI } from "../lib/cli.js";
 
 try {
-	if (!(await shouldSemanticRelease())) {
+	if (!(await shouldSemanticReleaseCLI(process.argv.slice(2)))) {
 		process.exitCode = 1;
 	}
 } catch (error) {

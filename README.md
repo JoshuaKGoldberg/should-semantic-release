@@ -28,14 +28,57 @@
 
 ## Usage
 
+This CLI script determines whether a semantic release should occur for a package based on Git history.
+Specifically, it returns truthy only if a commit whose type _isn't_ `chore` or `docs` has come since the most recent release commit.
+
 ```shell
-npm i should-semantic-release
+if npx should-semantic-release ; then npx release-it ; fi
 ```
 
-```ts
-import { greet } from "should-semantic-release";
+This can be useful, for example, to [prevent a `release-it` release](https://github.com/release-it/release-it/issues/969):
 
-greet("Hello, world!");
+```json
+{
+	"hooks": {
+		"before:bump": "if ! npx should-semantic-release ; then exit 1 ; fi"
+	}
+}
+```
+
+`should-semantic-release` accepts the following CLI flag:
+
+- `-v`/`--verbose` _(default: `false`)_: Whether to log debug information to the console
+
+```plaintext
+$ npx should-semantic-release
+
+Checking up to 123 commits for release readiness...
+Checking commit: chore: an example chore (#101)
+Found type chore.
+Checking commit: chore: another example chore (#100)
+Found type chore.
+Checking commit: chore: release v1.27.31
+This is a release commit. Returning false.
+```
+
+### Node API
+
+Alternately, you can call this import asynchronous `shouldSemanticRelease` function into Node scripts:
+
+```ts
+import { shouldSemanticRelease } from "should-semantic-release";
+
+if (await shouldSemanticRelease()) {
+	console.log("Let's release! 🚀");
+}
+```
+
+`shouldSemanticRelease` accepts an optional options object with the following parameter:
+
+- `verbose` _(default: `false`)_
+
+```js
+await shouldSemanticRelease({ verbose: true });
 ```
 
 ## Development
