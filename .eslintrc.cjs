@@ -29,6 +29,15 @@ module.exports = {
 			rules: {
 				// These off-by-default rules work well for this repo and we like them on.
 				"deprecation/deprecation": "error",
+
+				// Todo: this can be removed when typescript-eslint@6 is released.
+				"@typescript-eslint/restrict-template-expressions": [
+					"error",
+					{
+						allowBoolean: true,
+						allowNullish: true,
+					},
+				],
 			},
 		},
 		{
