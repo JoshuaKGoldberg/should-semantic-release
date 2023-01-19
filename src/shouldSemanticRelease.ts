@@ -19,14 +19,12 @@ export async function shouldSemanticRelease({
 
 	log(`Checking up to ${history.length} commits for release readiness...`);
 
-	for (let i = 0; i < history.length; i += 1) {
-		const message = history[i];
+	for (const message of history) {
 		log(`Checking commit: ${message}`);
 		// If the commit is a release, we should only release if other commits have been found
 		if (isReleaseCommit(message)) {
-			const result = !!i;
-			log(`Found a release commit. Returning ${result}.`);
-			return result;
+			log(`Found a release commit. Returning false.`);
+			return false;
 		}
 
 		// Otherwise, we should release if a non-ignored commit type is found
