@@ -1,6 +1,6 @@
 {
 	"author": "Josh Goldberg <npm@joshuakgoldberg.com>",
-	"bin": "./bin/should-semantic-release.mjs",
+	"bin": "./bin/should-semantic-release",
 	"dependencies": {
 		"conventional-commits-parser": "^3.2.4"
 	},
