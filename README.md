@@ -35,15 +35,7 @@ Specifically, it returns truthy only if a commit whose type _isn't_ `chore` or `
 if npx should-semantic-release ; then npx release-it ; fi
 ```
 
-This can be useful, for example, to [prevent a `release-it` release](https://github.com/release-it/release-it/issues/969):
-
-```json
-{
-	"hooks": {
-		"before:bump": "if ! npx should-semantic-release ; then exit 1 ; fi"
-	}
-}
-```
+This can be useful, for example, to [prevent a `release-it` release](https://github.com/release-it/release-it/issues/969).
 
 `should-semantic-release` accepts the following CLI flag:
 
