@@ -21,7 +21,7 @@ export async function shouldSemanticRelease({
 
 	for (const message of history) {
 		log(`Checking commit: ${message}`);
-		// If the commit is a release, we should only release if other commits have been found
+		// If we've hit a release commit, we know we don't need to release
 		if (isReleaseCommit(message)) {
 			log(`Found a release commit. Returning false.`);
 			return false;
