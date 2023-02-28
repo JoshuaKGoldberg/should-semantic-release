@@ -9,7 +9,7 @@
 		"@types/conventional-commits-parser": "^3.0.3",
 		"@typescript-eslint/eslint-plugin": "^5.48.0",
 		"@typescript-eslint/parser": "^5.48.0",
-		"@vitest/coverage-istanbul": "^0.28.0",
+		"@vitest/coverage-istanbul": "^0.29.0",
 		"cspell": "^6.18.1",
 		"eslint": "^8.31.0",
 		"eslint-config-prettier": "^8.6.0",
