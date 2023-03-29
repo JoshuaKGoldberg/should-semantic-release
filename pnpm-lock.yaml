@@ -17,7 +17,7 @@ specifiers:
   eslint-plugin-regexp: ^1.12.0
   eslint-plugin-simple-import-sort: ^10.0.0
   eslint-plugin-typescript-sort-keys: ^2.1.0
-  eslint-plugin-vitest: ^0.0.56
+  eslint-plugin-vitest: ^0.0.57
   husky: ^8.0.3
   jsonc-eslint-parser: ^2.1.0
   lint-staged: ^13.1.0
@@ -52,7 +52,7 @@ devDependencies:
   eslint-plugin-regexp: 1.12.0_eslint@8.31.0
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.31.0
   eslint-plugin-typescript-sort-keys: 2.1.0_ymoixgccul774h5skldb2twsuu
-  eslint-plugin-vitest: 0.0.56_kvhumnresjtcflasshbz76q27a
+  eslint-plugin-vitest: 0.0.57_kvhumnresjtcflasshbz76q27a
   husky: 8.0.3
   jsonc-eslint-parser: 2.1.0
   lint-staged: 13.1.0
@@ -2631,8 +2631,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vitest/0.0.56_kvhumnresjtcflasshbz76q27a:
-    resolution: {integrity: sha512-WAv+P99GZZYi0njqHGAvo5DtBQGKZLjwdp9x8EmHcXGwJ/ObbdhBske2GM1bzcKlyVyHF5/+oEq3JEwBObMYtA==}
+  /eslint-plugin-vitest/0.0.57_kvhumnresjtcflasshbz76q27a:
+    resolution: {integrity: sha512-+Ab+QrgjkqwIu7DqtW6D+/F+HmlyQ0dV78jOWs12RscKsFdXdX4IU0u3zM/sXN6ju2DJN4wwxx2/i+eIHkcWpg==}
     engines: {node: 14.x || >= 16}
     peerDependencies:
       eslint: '>=8.0.0'
