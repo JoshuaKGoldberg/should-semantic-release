@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@pkgjs/parseargs': ^0.10.0
+  '@pkgjs/parseargs': ^0.11.0
   '@types/conventional-commits-parser': ^3.0.3
   '@types/pkgjs__parseargs': ^0.10.0
   '@typescript-eslint/eslint-plugin': ^5.48.0
@@ -36,7 +36,7 @@ specifiers:
   vitest: ^0.29.0
 
 dependencies:
-  '@pkgjs/parseargs': 0.10.0
+  '@pkgjs/parseargs': 0.11.0
   conventional-commits-parser: 3.2.4
 
 devDependencies:
@@ -958,8 +958,8 @@ packages:
       '@octokit/openapi-types': 14.0.0
     dev: true
 
-  /@pkgjs/parseargs/0.10.0:
-    resolution: {integrity: sha512-gcLFrTC3mgIWeDk+eJySEz9unk8XNKi0i2lyppi36qOrW54wBEtOVdGle71ssm5E+vauNwyGKQuWJ2psgTYRVQ==}
+  /@pkgjs/parseargs/0.11.0:
+    resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
     dev: false
 
