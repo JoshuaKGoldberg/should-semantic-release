@@ -17,6 +17,8 @@
 		"conventionalcommits",
 		"infile",
 		"lcov",
+		"pkgjs",
+		"parseargs",
 		"quickstart",
 		"wontfix"
 	]
