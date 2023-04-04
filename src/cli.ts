@@ -1,4 +1,4 @@
-import { parseArgs } from "node:util";
+import { parseArgs } from "@pkgjs/parseargs";
 
 import { shouldSemanticRelease } from "./shouldSemanticRelease.js";
 
