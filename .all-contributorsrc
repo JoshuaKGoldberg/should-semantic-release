@@ -5,14 +5,27 @@
   "contributors": [
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
-      "contributions": ["tool"],
+      "contributions": [
+        "tool"
+      ],
       "login": "JoshuaKGoldberg",
       "name": "Josh Goldberg",
       "profile": "http://www.joshuakgoldberg.com"
+    },
+    {
+      "login": "cakeinpanic",
+      "name": "Katya Pavlenko",
+      "avatar_url": "https://avatars.githubusercontent.com/u/588916?v=4",
+      "profile": "https://medium.com/@cakeinpanic/latest",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
   "projectName": "should-semantic-release",
   "projectOwner": "JoshuaKGoldberg",
