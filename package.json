@@ -11,7 +11,7 @@
 		"@types/pkgjs__parseargs": "^0.10.0",
 		"@typescript-eslint/eslint-plugin": "^5.48.0",
 		"@typescript-eslint/parser": "^5.48.0",
-		"@vitest/coverage-istanbul": "^0.31.0",
+		"@vitest/coverage-istanbul": "^0.32.0",
 		"cspell": "^6.18.1",
 		"eslint": "^8.31.0",
 		"eslint-config-prettier": "^8.6.0",
