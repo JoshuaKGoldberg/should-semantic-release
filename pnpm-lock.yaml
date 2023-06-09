@@ -6,7 +6,7 @@ specifiers:
   '@types/pkgjs__parseargs': ^0.10.0
   '@typescript-eslint/eslint-plugin': ^5.48.0
   '@typescript-eslint/parser': ^5.48.0
-  '@vitest/coverage-istanbul': ^0.31.0
+  '@vitest/coverage-istanbul': ^0.32.0
   conventional-commits-parser: ^4.0.0
   cspell: ^6.18.1
   eslint: ^8.31.0
@@ -44,7 +44,7 @@ devDependencies:
   '@types/pkgjs__parseargs': 0.10.0
   '@typescript-eslint/eslint-plugin': 5.48.0_t64mykaxf4c72vpcnqchpzpw6e
   '@typescript-eslint/parser': 5.48.0_gwsr7krdb6rzv2fkdliitnrynq
-  '@vitest/coverage-istanbul': 0.31.0_vitest@0.29.8
+  '@vitest/coverage-istanbul': 0.32.0_vitest@0.29.8
   cspell: 6.18.1
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0_eslint@8.31.0
@@ -1462,10 +1462,10 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitest/coverage-istanbul/0.31.0_vitest@0.29.8:
-    resolution: {integrity: sha512-SaTI1PSpCRtBhJ5ihBx7Z+jgrFAQlDjuI4MFmKQ/HjyYWzEoaU+I062SquRrOLjJtVOHnwJdjVJXKi0dgFiR9Q==}
+  /@vitest/coverage-istanbul/0.32.0_vitest@0.29.8:
+    resolution: {integrity: sha512-itX7qym7g9SxUpE/VoJWUQ6KR2k1poSbpJCou3R8wmNZ0i5K4HT0o33Sc8tKT4XJ0SluHrS7voORpu5w6y/hGg==}
     peerDependencies:
-      vitest: '>=0.30.0 <1'
+      vitest: '>=0.32.0 <1'
     dependencies:
       istanbul-lib-coverage: 3.2.0
       istanbul-lib-instrument: 5.2.1
