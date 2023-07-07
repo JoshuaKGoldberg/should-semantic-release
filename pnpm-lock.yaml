@@ -26,7 +26,7 @@ specifiers:
   markdownlint: ^0.29.0
   markdownlint-cli: ^0.35.0
   npm-package-json-lint: ^6.4.0
-  npm-package-json-lint-config-default: ^5.0.0
+  npm-package-json-lint-config-default: ^6.0.0
   pnpm-deduplicate: ^0.4.1
   prettier: ^2.8.2
   release-it: ^15.6.0
@@ -63,7 +63,7 @@ devDependencies:
   markdownlint: 0.29.0
   markdownlint-cli: 0.35.0
   npm-package-json-lint: 6.4.0
-  npm-package-json-lint-config-default: 5.0.0_ogc4gh2psjwvuyt5uwb7bwur54
+  npm-package-json-lint-config-default: 6.0.0_ogc4gh2psjwvuyt5uwb7bwur54
   pnpm-deduplicate: 0.4.1
   prettier: 2.8.2
   release-it: 15.6.0
@@ -4462,11 +4462,11 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /npm-package-json-lint-config-default/5.0.0_ogc4gh2psjwvuyt5uwb7bwur54:
-    resolution: {integrity: sha512-guf+bECFtVz6sekPBmkf/m/k8gbX16F5S9wZI6cvhrkSEl+AhM2GoCU6alOhbaGbkn0PgbNRcRrsuu4jWEZFHQ==}
-    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+  /npm-package-json-lint-config-default/6.0.0_ogc4gh2psjwvuyt5uwb7bwur54:
+    resolution: {integrity: sha512-Ek3EcbMEjvGSxEywxNF2tTHuzvtaUH48Z7sljmeSejANMSpE1ssIN0oOG/Tlpc+U/P7ElfsOySIjijjmEnvMGw==}
+    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     peerDependencies:
-      npm-package-json-lint: ^6.0.0
+      npm-package-json-lint: ^7.0.0
     dependencies:
       npm-package-json-lint: 6.4.0
     dev: true
