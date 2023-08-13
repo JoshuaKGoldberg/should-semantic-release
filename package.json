@@ -34,7 +34,7 @@
 		"pnpm-deduplicate": "^0.4.1",
 		"prettier": "^2.8.2",
 		"release-it": "^15.6.0",
-		"replace-in-file": "^6.3.5",
+		"replace-in-file": "^7.0.0",
 		"sentences-per-line": "^0.2.1",
 		"typescript": "^5.0.0",
 		"vitest": "^0.29.0"
