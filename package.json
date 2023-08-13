@@ -9,7 +9,7 @@
 	"devDependencies": {
 		"@types/conventional-commits-parser": "^3.0.3",
 		"@types/pkgjs__parseargs": "^0.10.0",
-		"@typescript-eslint/eslint-plugin": "^5.48.0",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^5.48.0",
 		"@vitest/coverage-istanbul": "^0.33.0",
 		"cspell": "^6.18.1",
