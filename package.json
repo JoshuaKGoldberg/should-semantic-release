@@ -33,7 +33,7 @@
 		"npm-package-json-lint-config-default": "^6.0.0",
 		"pnpm-deduplicate": "^0.4.1",
 		"prettier": "^2.8.2",
-		"release-it": "^15.6.0",
+		"release-it": "^16.0.0",
 		"replace-in-file": "^6.3.5",
 		"sentences-per-line": "^0.2.1",
 		"typescript": "^5.0.0",
