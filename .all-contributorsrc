@@ -6,7 +6,9 @@
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
       "contributions": [
-        "tool"
+        "tool",
+        "code",
+        "maintenance"
       ],
       "login": "JoshuaKGoldberg",
       "name": "Josh Goldberg",
@@ -23,6 +25,7 @@
     }
   ],
   "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": true,
   "files": [
     "README.md"
   ],

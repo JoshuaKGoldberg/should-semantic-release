@@ -8,7 +8,7 @@ const ignoredTypes = new Set(["chore", "docs"]);
 
 export async function shouldSemanticRelease({
 	verbose,
-}: ShouldSemanticReleaseOptions) {
+}: ShouldSemanticReleaseOptions = {}) {
 	const rawHistory = await execOrThrow(`git log --pretty=format:"%s"`);
 	const history = rawHistory.split("\n");
 
@@ -39,7 +39,7 @@ export async function shouldSemanticRelease({
 
 	// If we've seen every commit in the history and none match, don't release
 	log(
-		"No commits found that indicate a semantic release is necessary. Returning false."
+		"No commits found that indicate a semantic release is necessary. Returning false.",
 	);
 	return false;
 }
