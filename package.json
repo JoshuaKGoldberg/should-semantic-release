@@ -1,6 +1,6 @@
 {
 	"name": "should-semantic-release",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Checks whether a semantic release should be run for a commit. 💂",
 	"repository": {
 		"type": "git",
