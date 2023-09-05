@@ -20,6 +20,8 @@
 		"npmpackagejsonlintrc",
 		"outro",
 		"packagejson",
+		"parseargs",
+		"pkgjs",
 		"quickstart",
 		"tsup",
 		"wontfix"
