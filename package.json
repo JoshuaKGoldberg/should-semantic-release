@@ -3,7 +3,7 @@
 	"bin": "./bin/should-semantic-release.mjs",
 	"dependencies": {
 		"@pkgjs/parseargs": "^0.11.0",
-		"conventional-commits-parser": "^4.0.0"
+		"conventional-commits-parser": "^5.0.0"
 	},
 	"description": "Checks whether a semantic release should be run for a commit.",
 	"devDependencies": {
