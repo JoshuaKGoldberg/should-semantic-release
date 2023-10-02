@@ -1,6 +1,6 @@
 import conventionalCommitsParser from "conventional-commits-parser";
 
-const alwaysMeaningfulTypes = new Set(["feat", "fix"]);
+const alwaysMeaningfulTypes = new Set(["feat", "fix", "perf"]);
 
 const alwaysIgnoredTypes = new Set(["docs", "refactor", "style", "test"]);
 
