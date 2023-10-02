@@ -10,7 +10,7 @@ const releaseCommitTester =
 	/^(?:chore(?:\(.*\))?:?)?\s*release|v?\d+\.\d+\.\d+/;
 
 export function getCommitMeaning(message: string) {
-	// Some times are always meaningful or ignored, regardless of potentially release-like messages
+	// Some types are always meaningful or ignored, regardless of potentially release-like messages
 	const { type } = conventionalCommitsParser.sync(message);
 	if (type) {
 		if (alwaysMeaningfulTypes.has(type)) {
