@@ -14,6 +14,7 @@ export function getCommitMeaning(message: string) {
 		if (alwaysMeaningfulTypes.has(type)) {
 			return "meaningful";
 		}
+
 		if (alwaysIgnoredTypes.has(type)) {
 			return { type };
 		}
