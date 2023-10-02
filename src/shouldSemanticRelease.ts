@@ -1,10 +1,6 @@
-import conventionalCommitsParser from "conventional-commits-parser";
-
-import { isReleaseCommit } from "./isReleaseCommit.js";
+import { getCommitMeaning } from "./getCommitMeaning.js";
 import { ShouldSemanticReleaseOptions } from "./types.js";
 import { execOrThrow } from "./utils.js";
-
-const ignoredTypes = new Set(["chore", "docs"]);
 
 export async function shouldSemanticRelease({
 	verbose,
@@ -21,20 +17,20 @@ export async function shouldSemanticRelease({
 
 	for (const message of history) {
 		log(`Checking commit: ${message}`);
-		// If we've hit a release commit, we know we don't need to release
-		if (isReleaseCommit(message)) {
-			log(`Found a release commit. Returning false.`);
-			return false;
-		}
+		const meaning = getCommitMeaning(message);
 
-		// Otherwise, we should release if a non-ignored commit type is found
-		const { type } = conventionalCommitsParser.sync(message);
-		if (type && !ignoredTypes.has(type)) {
-			log(`Found a meaningful commit. Returning true.`);
-			return true;
-		}
+		switch (meaning) {
+			case "release":
+				log(`Found a release commit. Returning false.`);
+				return false;
 
-		log(`Found type ${type}. Continuing.`);
+			case "meaningful":
+				log(`Found a meaningful commit. Returning true.`);
+				return true;
+
+			default:
+				log(`Found type ${meaning.type}. Continuing.`);
+		}
 	}
 
 	// If we've seen every commit in the history and none match, don't release
