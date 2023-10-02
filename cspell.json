@@ -6,8 +6,7 @@
 		"coverage",
 		"lib",
 		"node_modules",
-		"pnpm-lock.yaml",
-		"script/*.json"
+		"pnpm-lock.yaml"
 	],
 	"words": [
 		"Codecov",
@@ -15,11 +14,16 @@
 		"commitlint",
 		"contributorsrc",
 		"conventionalcommits",
-		"infile",
+		"knip",
 		"lcov",
-		"pkgjs",
+		"markdownlintignore",
+		"npmpackagejsonlintrc",
+		"outro",
+		"packagejson",
 		"parseargs",
+		"pkgjs",
 		"quickstart",
+		"tsup",
 		"wontfix"
 	]
 }

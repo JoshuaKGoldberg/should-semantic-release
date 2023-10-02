@@ -4,10 +4,15 @@
 		"requireCommits": true
 	},
 	"github": {
+		"autoGenerate": true,
 		"release": true,
 		"releaseName": "v${version}"
 	},
-	"hooks": {
-		"before:bump": "echo hihihihihi"
+	"npm": { "publishArgs": ["--access public", "--provenance"] },
+	"plugins": {
+		"@release-it/conventional-changelog": {
+			"infile": "CHANGELOG.md",
+			"preset": "angular"
+		}
 	}
 }
