@@ -28,8 +28,8 @@
 
 ## Usage
 
-This CLI script determines whether a semantic release should occur for a package based on Git history.
-Specifically, it returns truthy only if a commit whose type _isn't_ `chore` or `docs` has come since the most recent release commit.
+This function determines whether a semantic release should occur for a package based on Git history.
+It returns true if a "meaningful" commit has come since the most recent release commit.
 
 ```shell
 if npx should-semantic-release ; then npx release-it ; fi
@@ -52,6 +52,16 @@ Found type chore.
 Checking commit: chore: release v1.27.31
 This is a release commit. Returning false.
 ```
+
+### Commit Purposes
+
+Based on a commit's conventional commit message type:
+
+1. If the type is `feat` or `fix`, it's considered "meaningful"
+2. If the type is `docs`, `refactor`, `style`, or `test`, it's ignored
+3. If the message looks like `v1.2.3`, `chore: release 1.2.3`, or similar, it's considered a "release"
+
+See [`getCommitMeaning`](./src/getCommitMeaning.ts) for the exact logic used.
 
 ### Node API
 

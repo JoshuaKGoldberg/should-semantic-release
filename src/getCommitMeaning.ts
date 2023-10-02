@@ -1,7 +1,5 @@
 import conventionalCommitsParser from "conventional-commits-parser";
 
-export type CommitMeaning = "release" | "meaningful" | "other";
-
 const alwaysMeaningfulTypes = new Set(["feat", "fix"]);
 
 const alwaysIgnoredTypes = new Set(["docs", "refactor", "style", "test"]);
