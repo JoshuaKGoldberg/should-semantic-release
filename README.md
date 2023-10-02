@@ -80,7 +80,9 @@ if (await shouldSemanticRelease()) {
 
 - `verbose` _(default: `false`)_
 
-```js
+```ts
+import { shouldSemanticRelease } from "should-semantic-release";
+
 await shouldSemanticRelease({ verbose: true });
 ```
 

@@ -50,6 +50,10 @@ module.exports = {
 					"error",
 					{ allowModules: ["should-semantic-release"] },
 				],
+				"n/no-unpublished-import": [
+					"error",
+					{ allowModules: ["should-semantic-release"] },
+				],
 			},
 		},
 		{
