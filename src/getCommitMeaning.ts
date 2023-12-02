@@ -18,7 +18,10 @@ export function getCommitMeaning(message: string) {
 		type = commit.type;
 
 		// Some types are always meaningful or ignored, regardless of potentially release-like messages
-		if (alwaysMeaningfulTypes.has(type)) {
+		if (
+			alwaysMeaningfulTypes.has(type) ||
+			commit.notes.some(({ title }) => title === "BREAKING CHANGE")
+		) {
 			return "meaningful";
 		}
 

@@ -40,6 +40,17 @@ describe("getCommitMeaning", () => {
 		["chore(deps): release", "release"],
 		["chore(deps): release 1.2.3", "release"],
 		["chore(deps): release v1.2.3", "release"],
+		// Breaking changes are meaningful no matter the type of the commit.
+		["chore!: message", "meaningful"],
+		["docs!: message", "meaningful"],
+		["style!: message", "meaningful"],
+		["chore!: release", "meaningful"],
+		["chore: bump\n\nBREAKING CHANGE: breaks things", "meaningful"],
+		["chore: bump\n\nBREAKING-CHANGE: breaks things", "meaningful"],
+		["docs: bump\n\nBREAKING CHANGE: breaks things", "meaningful"],
+		["docs: bump\n\nBREAKING-CHANGE: breaks things", "meaningful"],
+		["style: bump\n\nBREAKING CHANGE: breaks things", "meaningful"],
+		["style: bump\n\nBREAKING-CHANGE: breaks things", "meaningful"],
 	])("returns %j for %s", (input, expected) => {
 		expect(getCommitMeaning(input)).toEqual(expected);
 	});
