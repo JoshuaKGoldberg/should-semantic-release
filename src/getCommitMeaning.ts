@@ -14,7 +14,7 @@ export function getCommitMeaning(message: string) {
 		breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
 		headerPattern: /^(\w*)(?:\((.*)\))?!?: (.*)$/,
 	});
-	if (notes.some((note) => note.title.match(/BREAKING[ -]CHANGE/))) {
+	if (notes.some((note) => note.title.match(/^BREAKING[ -]CHANGE$/))) {
 		return "meaningful";
 	}
 
