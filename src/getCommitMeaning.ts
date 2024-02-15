@@ -7,15 +7,13 @@ const alwaysIgnoredTypes = new Set(["docs", "refactor", "style", "test"]);
 const releaseCommitTester =
 	/^(?:chore(?:\(.*\))?:?)?\s*release|v?\d+\.\d+\.\d+/;
 
-const breakChangingCommitTester = /^\w+(?:\(.+\))?!/;
-
 export function getCommitMeaning(message: string) {
-	if (breakChangingCommitTester.test(message)) {
-		return "meaningful";
-	}
-
 	// Some types are always meaningful or ignored, regardless of potentially release-like messages
-	const { notes, type } = conventionalCommitsParser.sync(message);
+	const { notes, type } = conventionalCommitsParser.sync(message, {
+		// @ts-expect-error - options from https://github.com/conventional-changelog/conventional-changelog/issues/648#issuecomment-704867077
+		breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
+		headerPattern: /^(\w*)(?:\((.*)\))?!?: (.*)$/,
+	});
 	if (notes.some((note) => note.title.match(/BREAKING[ -]CHANGE/))) {
 		return "meaningful";
 	}
