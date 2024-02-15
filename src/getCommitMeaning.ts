@@ -12,7 +12,6 @@ export function getCommitMeaning(message: string) {
 	const { notes, type } = conventionalCommitsParser.sync(message, {
 		// @ts-expect-error - options from https://github.com/conventional-changelog/conventional-changelog/issues/648#issuecomment-704867077
 		breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
-		headerPattern: /^(\w*)(?:\((.*)\))?!?: (.*)$/,
 	});
 	if (notes.some((note) => note.title.match(/^BREAKING[ -]CHANGE$/))) {
 		return "meaningful";
