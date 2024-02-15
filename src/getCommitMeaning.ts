@@ -7,7 +7,16 @@ const alwaysIgnoredTypes = new Set(["docs", "refactor", "style", "test"]);
 const releaseCommitTester =
 	/^(?:chore(?:\(.*\))?:?)?\s*release|v?\d+\.\d+\.\d+/;
 
+const breakChangingCommitTester = [
+	/^\w+(?:\(.+\))?!:\s*/,
+	/^\w+(?:\(.+\))?!?:\s[^\n]*\n[^\n]*\n.*BREAKING[ |-]CHANGE: /s,
+];
+
 export function getCommitMeaning(message: string) {
+	if (breakChangingCommitTester.some((tester) => tester.test(message))) {
+		return "meaningful";
+	}
+
 	// Some types are always meaningful or ignored, regardless of potentially release-like messages
 	const { type } = conventionalCommitsParser.sync(message);
 	if (type) {
