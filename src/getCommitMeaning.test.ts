@@ -61,6 +61,20 @@ describe("getCommitMeaning", () => {
 			"chore: deps\n\nMultiple: footer notes\nMultiple: footer notes",
 			{ type: "chore" },
 		],
+		// This test may should be { type: "chore" },
+		// but conventionalCommitsParser looks like can't parse this case correctly
+		[
+			"chore: deps\n\nBREAKING CHANGE line starts with BREAKING CHANGE (no :)",
+			"meaningful",
+		],
+		[
+			"chore: deps\n\nline contains BREAKING CHANGE:  inside it",
+			{ type: "chore" },
+		],
+		[
+			"BREAKING CHANGE (major): line starts with something like BREAKING CHANGE",
+			{ type: undefined },
+		],
 	])("returns %j for %s", (input, expected) => {
 		expect(getCommitMeaning(input)).toEqual(expected);
 	});
