@@ -10,6 +10,7 @@ const releaseCommitTester =
 export function getCommitMeaning(message: string) {
 	// Some types are always meaningful or ignored, regardless of potentially release-like messages
 	// options from https://github.com/conventional-changelog/conventional-changelog/issues/648#issuecomment-704867077
+	// https://github.com/JoshuaKGoldberg/should-semantic-release/issues/174
 	const { notes, type } = conventionalCommitsParser.sync(message, {
 		breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
 	} as object);
