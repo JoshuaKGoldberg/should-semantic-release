@@ -59,7 +59,7 @@ This is a release commit. Returning false.
 Based on a commit's conventional commit message type:
 
 1. If the type is `feat` `fix`, or `perf`, it's considered "meaningful"
-1. If the commit is marked as being a breaking change, either via a note or via an `!` appended to the type, it's considered "meaningful"
+1. If the commit is marked as being a breaking change, either via a `BREAKING CHANGE:` at the start of any commit message lines or via an `!` appended to the type, it's considered "meaningful"
 1. If the type is `docs`, `refactor`, `style`, or `test`, it's ignored
 1. If the message looks like `v1.2.3`, `chore: release 1.2.3`, or similar, it's considered a "release"
 
