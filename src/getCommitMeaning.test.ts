@@ -40,6 +40,41 @@ describe("getCommitMeaning", () => {
 		["chore(deps): release", "release"],
 		["chore(deps): release 1.2.3", "release"],
 		["chore(deps): release v1.2.3", "release"],
+		["chore!: message", "meaningful"],
+		["docs!: message", "meaningful"],
+		["chore!: release", "meaningful"],
+		["feat!: a feature with a breaking change", "meaningful"],
+		["chore: bump\n\nBREAKING CHANGE: breaks things", "meaningful"],
+		["chore: bump\n\nBREAKING-CHANGE: breaks things", "meaningful"],
+		["docs: bump\n\nBREAKING CHANGE: breaks things", "meaningful"],
+		["docs: bump\n\nBREAKING-CHANGE: breaks things", "meaningful"],
+		[
+			"chore: deps\n\nBREAKING-CHANGE: breaks things\nMultiple: footer notes",
+			"meaningful",
+		],
+		["chore: deps\n\n! in the commit body", { type: "chore" }],
+		[
+			"chore: deps\n\nFooter-note: other than BREAKING CHANGE",
+			{ type: "chore" },
+		],
+		[
+			"chore: deps\n\nMultiple: footer notes\nMultiple: footer notes",
+			{ type: "chore" },
+		],
+		// This test may should be { type: "chore" },
+		// but conventionalCommitsParser looks like can't parse this case correctly
+		[
+			"chore: deps\n\nBREAKING CHANGE line starts with BREAKING CHANGE (no :)",
+			"meaningful",
+		],
+		[
+			"chore: deps\n\nline contains BREAKING CHANGE:  inside it",
+			{ type: "chore" },
+		],
+		[
+			"BREAKING CHANGE (major): line starts with something like BREAKING CHANGE",
+			{ type: undefined },
+		],
 	])("returns %j for %s", (input, expected) => {
 		expect(getCommitMeaning(input)).toEqual(expected);
 	});

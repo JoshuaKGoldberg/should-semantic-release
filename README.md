@@ -6,7 +6,7 @@
 	<a href="#contributors" target="_blank">
 <!-- prettier-ignore-start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<img alt="All Contributors: 2 👪" src="https://img.shields.io/badge/all_contributors-2_👪-21bb42.svg" />
+<img alt="All Contributors: 4 👪" src="https://img.shields.io/badge/all_contributors-4_👪-21bb42.svg" />
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- prettier-ignore-end -->
 </a>
@@ -59,8 +59,9 @@ This is a release commit. Returning false.
 Based on a commit's conventional commit message type:
 
 1. If the type is `feat` `fix`, or `perf`, it's considered "meaningful"
-2. If the type is `docs`, `refactor`, `style`, or `test`, it's ignored
-3. If the message looks like `v1.2.3`, `chore: release 1.2.3`, or similar, it's considered a "release"
+1. If the commit is marked as being a breaking change, either via a `BREAKING CHANGE:` at the start of any commit message lines or via an `!` appended to the type, it's considered "meaningful"
+1. If the type is `docs`, `refactor`, `style`, or `test`, it's ignored
+1. If the message looks like `v1.2.3`, `chore: release 1.2.3`, or similar, it's considered a "release"
 
 See [`getCommitMeaning`](./src/getCommitMeaning.ts) for the exact logic used.
 
@@ -104,6 +105,8 @@ Thanks! 💖
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://www.joshuakgoldberg.com"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt="Josh Goldberg"/><br /><sub><b>Josh Goldberg</b></sub></a><br /><a href="https://github.com/JoshuaKGoldberg/should-semantic-release/commits?author=JoshuaKGoldberg" title="Code">💻</a> <a href="#maintenance-JoshuaKGoldberg" title="Maintenance">🚧</a> <a href="#infra-JoshuaKGoldberg" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#ideas-JoshuaKGoldberg" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://medium.com/@cakeinpanic/latest"><img src="https://avatars.githubusercontent.com/u/588916?v=4?s=100" width="100px;" alt="Katya Pavlenko"/><br /><sub><b>Katya Pavlenko</b></sub></a><br /><a href="https://github.com/JoshuaKGoldberg/should-semantic-release/commits?author=cakeinpanic" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://hyoban.cc"><img src="https://avatars.githubusercontent.com/u/38493346?v=4?s=100" width="100px;" alt="Stephen Zhou"/><br /><sub><b>Stephen Zhou</b></sub></a><br /><a href="https://github.com/JoshuaKGoldberg/should-semantic-release/commits?author=hyoban" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/steveluscher"><img src="https://avatars.githubusercontent.com/u/13243?v=4?s=100" width="100px;" alt="Steven Luscher"/><br /><sub><b>Steven Luscher</b></sub></a><br /><a href="#ideas-steveluscher" title="Ideas, Planning, & Feedback">🤔</a></td>
     </tr>
   </tbody>
 </table>
