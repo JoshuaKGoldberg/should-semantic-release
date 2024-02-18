@@ -1,9 +1,8 @@
 import cp from "node:child_process";
 import { promisify } from "node:util";
 
-const exec = promisify(cp.exec);
-
 export async function execOrThrow(command: string) {
+	const exec = promisify(cp.exec);
 	const { stderr, stdout } = await exec(command);
 
 	if (stderr) {
