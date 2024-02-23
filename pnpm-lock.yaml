@@ -17,8 +17,8 @@ devDependencies:
     specifier: ^8.0.0
     version: 8.0.1(release-it@17.0.0)
   '@types/conventional-commits-parser':
-    specifier: ^3.0.4
-    version: 3.0.4
+    specifier: ^5.0.0
+    version: 5.0.0
   '@types/eslint':
     specifier: ^8.44.3
     version: 8.44.3
@@ -1413,8 +1413,8 @@ packages:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
     dev: true
 
-  /@types/conventional-commits-parser@3.0.4:
-    resolution: {integrity: sha512-nO3LTqFyExqXWAAfcsGh63gPLmYZSAqlLZfhqJ57qkgtyd0BA8S8M/mqtWCD/PvegjuaGk1z4UG5Hy7bZq79zA==}
+  /@types/conventional-commits-parser@5.0.0:
+    resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     dependencies:
       '@types/node': 18.11.18
     dev: true

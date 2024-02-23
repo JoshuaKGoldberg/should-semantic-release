@@ -44,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@release-it/conventional-changelog": "^8.0.0",
-		"@types/conventional-commits-parser": "^3.0.4",
+		"@types/conventional-commits-parser": "^5.0.0",
 		"@types/eslint": "^8.44.3",
 		"@types/pkgjs__parseargs": "^0.10.1",
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
