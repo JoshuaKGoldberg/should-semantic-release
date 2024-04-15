@@ -21,7 +21,7 @@ devDependencies:
     version: 5.0.0
   '@types/eslint':
     specifier: ^8.44.3
-    version: 8.56.8
+    version: 8.56.9
   '@types/pkgjs__parseargs':
     specifier: ^0.10.1
     version: 0.10.3
@@ -1667,8 +1667,8 @@ packages:
       '@types/node': 20.12.7
     dev: true
 
-  /@types/eslint@8.56.8:
-    resolution: {integrity: sha512-LdDdQVDzDXf3ijhhMnE27C5vc0QEknD8GiMR/Hi+fVbdZNfAfCy2j69m0LjUd2MAy0+kIgnOtd5ndTmDk/VWCA==}
+  /@types/eslint@8.56.9:
+    resolution: {integrity: sha512-W4W3KcqzjJ0sHg2vAq9vfml6OhsJ53TcUjUqfzzZf/EChUtwspszj/S0pzMxnfRcO55/iGq47dscXw71Fxc4Zg==}
     dependencies:
       '@types/estree': 1.0.5
       '@types/json-schema': 7.0.15
