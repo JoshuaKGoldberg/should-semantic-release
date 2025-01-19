@@ -17,7 +17,7 @@ importers:
     devDependencies:
       '@release-it/conventional-changelog':
         specifier: ^9.0.0
-        version: 9.0.3(conventional-commits-filter@5.0.0)(conventional-commits-parser@5.0.0)(release-it@17.10.0(typescript@5.6.3))
+        version: 9.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@5.0.0)(release-it@17.10.0(typescript@5.6.3))
       '@types/conventional-commits-parser':
         specifier: ^5.0.0
         version: 5.0.0
@@ -842,8 +842,8 @@ packages:
     resolution: {integrity: sha512-c83qWb22rNRuB0UaVCI0uRPNRr8Z0FWnEIvT47jiHAmOIUHbBOg5XvV7pM5x+rKn9HRpjxquDbXYSXr3fAKFcw==}
     engines: {node: '>=12'}
 
-  '@release-it/conventional-changelog@9.0.3':
-    resolution: {integrity: sha512-+3TL+B89Kc+VTbfGxpTvJkbegWt5XIzkovsYVJyoZpOZDG07v25FU8c5R5Q8yNUs76Ikfq0sp+ZTTxmefG4Hiw==}
+  '@release-it/conventional-changelog@9.0.4':
+    resolution: {integrity: sha512-eSZVATX2qiyxzpXdIVNczxTGR+uD4lG/ZEfDDYBJ8vKIj6fKp+eYicIS8Ff/eL3bA9XiQTmllKqxPRzmz9d45w==}
     engines: {node: ^18.18.0 || ^20.9.0 || ^22.0.0}
     peerDependencies:
       release-it: ^17.0.0
@@ -3483,8 +3483,8 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  type-fest@4.27.1:
-    resolution: {integrity: sha512-3Ta7CyV6daqpwuGJMJKABaUChZZejpzysZkQg1//bLRg2wKQ4duwsg3MMIsHuElq58iDqizg4DBUmK8H8wExJg==}
+  type-fest@4.32.0:
+    resolution: {integrity: sha512-rfgpoi08xagF3JSdtJlCwMq9DGNDE0IMh3Mkpc1wUypg9vPi786AiqeBBKcqvIkq42azsBM85N490fyZjeUftw==}
     engines: {node: '>=16'}
 
   typedarray@0.0.6:
@@ -4302,7 +4302,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@release-it/conventional-changelog@9.0.3(conventional-commits-filter@5.0.0)(conventional-commits-parser@5.0.0)(release-it@17.10.0(typescript@5.6.3))':
+  '@release-it/conventional-changelog@9.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@5.0.0)(release-it@17.10.0(typescript@5.6.3))':
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 6.0.0(conventional-commits-filter@5.0.0)
@@ -4727,7 +4727,7 @@ snapshots:
       chalk: 5.3.0
       cli-boxes: 3.0.0
       string-width: 7.2.0
-      type-fest: 4.27.1
+      type-fest: 4.32.0
       widest-line: 5.0.0
       wrap-ansi: 9.0.0
 
@@ -5158,7 +5158,7 @@ snapshots:
 
   dot-prop@9.0.0:
     dependencies:
-      type-fest: 4.27.1
+      type-fest: 4.32.0
 
   eastasianwidth@0.2.0: {}
 
@@ -6382,7 +6382,7 @@ snapshots:
       semver: 7.6.3
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      type-fest: 4.27.1
+      type-fest: 4.32.0
       validate-npm-package-name: 5.0.1
     transitivePeerDependencies:
       - supports-color
@@ -6547,7 +6547,7 @@ snapshots:
     dependencies:
       '@babel/code-frame': 7.26.2
       index-to-position: 0.1.2
-      type-fest: 4.27.1
+      type-fest: 4.32.0
 
   parse-ms@4.0.0: {}
 
@@ -6695,7 +6695,7 @@ snapshots:
     dependencies:
       find-up-simple: 1.0.0
       read-pkg: 9.0.1
-      type-fest: 4.27.1
+      type-fest: 4.32.0
 
   read-pkg-up@7.0.1:
     dependencies:
@@ -6715,7 +6715,7 @@ snapshots:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.2
       parse-json: 8.1.0
-      type-fest: 4.27.1
+      type-fest: 4.32.0
       unicorn-magic: 0.1.0
 
   readable-stream@3.6.2:
@@ -7168,7 +7168,7 @@ snapshots:
 
   type-fest@2.19.0: {}
 
-  type-fest@4.27.1: {}
+  type-fest@4.32.0: {}
 
   typedarray@0.0.6: {}
 
