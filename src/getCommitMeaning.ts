@@ -9,10 +9,13 @@ const releaseCommitTester =
 
 export function getCommitMeaning(message: string) {
 	// Some types are always meaningful or ignored, regardless of potentially release-like messages
-	const { notes, type } = conventionalCommitsParser.sync(message, {
+	const { header, notes, type } = conventionalCommitsParser.sync(message, {
 		breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
 	});
-	if (notes.some((note) => note.title.match(/^BREAKING[ -]CHANGE$/))) {
+	if (
+		notes.some((note) => note.title.match(/^BREAKING[ -]CHANGE$/)) ||
+		header?.match(/^BREAKING[ -]CHANGE(?: \([^)]+\))?:/)
+	) {
 		return "meaningful";
 	}
 

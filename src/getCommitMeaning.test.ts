@@ -72,8 +72,20 @@ describe("getCommitMeaning", () => {
 			{ type: "chore" },
 		],
 		[
-			"BREAKING CHANGE (major): line starts with something like BREAKING CHANGE",
-			{ type: undefined },
+			"BREAKING CHANGE: line starts with something like BREAKING CHANGE",
+			"meaningful",
+		],
+		[
+			"BREAKING CHANGE (major): line starts with something like BREAKING CHANGE and has modifier",
+			"meaningful",
+		],
+		[
+			"BREAKING-CHANGE: line starts with something like BREAKING-CHANGE",
+			"meaningful",
+		],
+		[
+			"BREAKING-CHANGE (major): line starts with something like BREAKING-CHANGE and has modifier",
+			"meaningful",
 		],
 	])("returns %j for %s", (input, expected) => {
 		expect(getCommitMeaning(input)).toEqual(expected);
