@@ -1,3 +1,11 @@
+# Changelog
+
+## [0.3.1](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.0...0.3.1) (2025-02-16)
+
+### Bug Fixes
+
+- should recognise breaking changes ([#533](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/533)) ([2dfeee8](https://github.com/JoshuaKGoldberg/should-semantic-release/commit/2dfeee8f3ccd48e5952545538eb906a72e137bba)), closes [#507](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/507)
+
 # 0.3.0 (2024-02-18)
 
 ### Bug Fixes
@@ -20,5 +28,3 @@
 ### Reverts
 
 - Revert "chore: switch bin to non-.mjs" ([40545b9](https://github.com/JoshuaKGoldberg/should-semantic-release/commit/40545b9b443f56dbe183618ecff934cc3d2c7766))
-
-# Changelog
