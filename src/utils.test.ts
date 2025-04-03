@@ -1,3 +1,5 @@
+// eslint-disable-next-line @eslint-community/eslint-comments/disable-enable-pair
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { describe, expect, it, vi } from "vitest";
 
 import { execOrThrow } from "./utils.js";

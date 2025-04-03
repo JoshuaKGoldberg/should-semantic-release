@@ -11,7 +11,7 @@ export async function shouldSemanticRelease({
 	const log = verbose
 		? console.log.bind(console)
 		: // eslint-disable-next-line @typescript-eslint/no-empty-function
-		  () => {};
+			() => {};
 
 	log(`Checking up to ${history.length} commits for release readiness...`);
 
@@ -20,13 +20,13 @@ export async function shouldSemanticRelease({
 		const meaning = getCommitMeaning(message);
 
 		switch (meaning) {
-			case "release":
-				log(`Found a release commit. Returning false.`);
-				return false;
-
 			case "meaningful":
 				log(`Found a meaningful commit. Returning true.`);
 				return true;
+
+			case "release":
+				log(`Found a release commit. Returning false.`);
+				return false;
 
 			default:
 				log(`Found type ${meaning.type}. Continuing.`);
