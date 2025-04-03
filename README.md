@@ -109,6 +109,4 @@ Thanks! 💂
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
-> 💙 This package is based on [@JoshuaKGoldberg](https://github.com/JoshuaKGoldberg)'s [create-typescript-app](https://github.com/JoshuaKGoldberg/create-typescript-app).
-
 > 💝 This package was templated with [`create-typescript-app`](https://github.com/JoshuaKGoldberg/create-typescript-app) using the [Bingo engine](https://create.bingo).
