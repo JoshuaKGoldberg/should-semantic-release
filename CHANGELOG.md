@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.1...0.3.3) (2025-04-03)
+
+### Bug Fixes
+
+- bump to create-typescript-app@2 with transitions action ([#547](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/547)) ([c3895ed](https://github.com/JoshuaKGoldberg/should-semantic-release/commit/c3895ed076742cb0c681f5bc2cb1273338a8ec61)), closes [#546](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/546)
+- correct conventional-commits-parser range back down to 5 ([#549](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/549)) ([5cf660c](https://github.com/JoshuaKGoldberg/should-semantic-release/commit/5cf660c39581fca3ab785f99b8327b94f9b46c84)), closes [#548](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/548)
+
 ## [0.3.1](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.0...0.3.1) (2025-02-16)
 
 ### Bug Fixes
