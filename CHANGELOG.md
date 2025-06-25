@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.4](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.3...0.3.4) (2025-06-25)
+
+### Bug Fixes
+
+- treat common chore(deps): ... messages as chores ([#646](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/646)) ([890a68f](https://github.com/JoshuaKGoldberg/should-semantic-release/commit/890a68f2bde1bf1846daf8a00c53382e26719b97)), closes [#569](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/569)
+
 ## [0.3.3](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.1...0.3.3) (2025-04-03)
 
 ### Bug Fixes
