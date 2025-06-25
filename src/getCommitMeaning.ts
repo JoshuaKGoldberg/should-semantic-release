@@ -4,8 +4,10 @@ const alwaysMeaningfulTypes = new Set(["feat", "fix", "perf"]);
 
 const alwaysIgnoredTypes = new Set(["docs", "refactor", "style", "test"]);
 
-const releaseCommitTester =
-	/^(?:chore(?:\(.*\))?:?)?\s*release|v?\d+\.\d+\.\d+/;
+const releaseCommitTesters = [
+	/^(?:chore(?:\(.*\))?:?)?\s*release\b/i,
+	/^v?\d+\.\d+\.\d+?\.?/,
+];
 
 export function getCommitMeaning(message: string) {
 	// Some types are always meaningful or ignored, regardless of potentially release-like messages
@@ -30,7 +32,7 @@ export function getCommitMeaning(message: string) {
 	}
 
 	// If we've hit a release commit, we know we don't need to release
-	if (releaseCommitTester.test(message)) {
+	if (releaseCommitTesters.some((regex) => regex.test(message))) {
 		return "release";
 	}
 

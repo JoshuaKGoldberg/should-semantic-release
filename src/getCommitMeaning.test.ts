@@ -34,6 +34,9 @@ describe("getCommitMeaning", () => {
 		["v1.23.456", "release"],
 		["12.345.6789", "release"],
 		["v12.345.6789", "release"],
+		["chore(deps): bump dependency abc", { type: "chore" }],
+		["chore(deps): update dependency abc", { type: "chore" }],
+		["chore(deps): update dependency abc to v1.2.3", { type: "chore" }],
 		["chore: release", "release"],
 		["chore: release 1.2.3", "release"],
 		["chore: release v1.2.3", "release"],
@@ -87,7 +90,7 @@ describe("getCommitMeaning", () => {
 			"BREAKING-CHANGE (major): line starts with something like BREAKING-CHANGE and has modifier",
 			"meaningful",
 		],
-	])("returns %j for %s", (input, expected) => {
+	])("for %j returns %s", (input, expected) => {
 		expect(getCommitMeaning(input)).toEqual(expected);
 	});
 });
