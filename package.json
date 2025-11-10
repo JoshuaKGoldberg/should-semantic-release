@@ -38,13 +38,12 @@
 	},
 	"dependencies": {
 		"@pkgjs/parseargs": "^0.11.0",
-		"conventional-commits-parser": "^5.0.0"
+		"conventional-commits-parser": "^6.2.1"
 	},
 	"devDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "4.5.0",
 		"@eslint/js": "9.39.0",
 		"@release-it/conventional-changelog": "10.0.0",
-		"@types/conventional-commits-parser": "5.0.1",
 		"@types/eslint-plugin-markdown": "2.0.2",
 		"@types/node": "24.10.0",
 		"@types/pkgjs__parseargs": "0.10.3",

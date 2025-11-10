@@ -1,4 +1,4 @@
-import conventionalCommitsParser from "conventional-commits-parser";
+import { CommitParser } from "conventional-commits-parser";
 
 const alwaysMeaningfulTypes = new Set(["feat", "fix", "perf"]);
 
@@ -9,11 +9,13 @@ const releaseCommitTesters = [
 	/^v?\d+\.\d+\.\d+?\.?/,
 ];
 
+const parser = new CommitParser({
+	breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
+});
+
 export function getCommitMeaning(message: string) {
 	// Some types are always meaningful or ignored, regardless of potentially release-like messages
-	const { header, notes, type } = conventionalCommitsParser.sync(message, {
-		breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
-	});
+	const { header, notes, type } = parser.parse(message);
 	if (
 		notes.some((note) => /^BREAKING[ -]CHANGE$/.exec(note.title)) ||
 		header?.match(/^BREAKING[ -]CHANGE(?: \([^)]+\))?:/)
