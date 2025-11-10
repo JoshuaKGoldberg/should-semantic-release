@@ -14,6 +14,8 @@ describe("getCommitMeaning", () => {
 		["feat: bump", "meaningful"],
 		["feat: bump version to 1.2.3", "meaningful"],
 		["feat: message", "meaningful"],
+		["feat(scope): message", "meaningful"],
+		["feat(scope1, scope2): message", "meaningful"],
 		["fix", { type: undefined }],
 		["fix: bump", "meaningful"],
 		["fix: bump version to 1.2.3", "meaningful"],
