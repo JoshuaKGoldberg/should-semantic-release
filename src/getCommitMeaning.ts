@@ -11,6 +11,7 @@ const releaseCommitTesters = [
 
 const parser = new CommitParser({
 	breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
+	headerPattern: /^(\w*)(?:\(([\w$.\-*, ]*)\))?: (.*)$/,
 });
 
 export function getCommitMeaning(message: string) {
