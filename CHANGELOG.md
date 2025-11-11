@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.5](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.4...0.3.5) (2025-11-11)
+
+### Bug Fixes
+
+- report meaningful commits when multiple scopes are in the header ([#769](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/769)) ([c740d61](https://github.com/JoshuaKGoldberg/should-semantic-release/commit/c740d61e421bb3fa398a0f324142dea02d87d2c2)), closes [#764](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/764)
+
 ## [0.3.4](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.3...0.3.4) (2025-06-25)
 
 ### Bug Fixes
