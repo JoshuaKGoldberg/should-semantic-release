@@ -37,8 +37,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0(vitest@4.1.0(@types/node@24.13.3)(vite@8.0.10(@types/node@24.13.3)(esbuild@0.25.12)(jiti@2.7.0)(yaml@2.9.0)))
       '@vitest/eslint-plugin':
-        specifier: 1.5.0
-        version: 1.5.0(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2)(vitest@4.1.0(@types/node@24.13.3)(vite@8.0.10(@types/node@24.13.3)(esbuild@0.25.12)(jiti@2.7.0)(yaml@2.9.0)))
+        specifier: 1.6.27
+        version: 1.6.27(@typescript-eslint/eslint-plugin@8.41.0(@typescript-eslint/parser@8.41.0(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2))(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2))(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2)(vitest@4.1.0(@types/node@24.13.3)(vite@8.0.10(@types/node@24.13.3)(esbuild@0.25.12)(jiti@2.7.0)(yaml@2.9.0)))
       console-fail-test:
         specifier: 0.6.0
         version: 0.6.0
@@ -1724,14 +1724,17 @@ packages:
       '@vitest/browser':
         optional: true
 
-  '@vitest/eslint-plugin@1.5.0':
-    resolution: {integrity: sha512-j3uuIAPTYWYnSit9lspb08/EKsxEmGqjQf+Wpb1DQkxc+mMkhL58ZknDCgjYhY4Zu76oxZ0hVWTHlmRW0mJq5w==}
+  '@vitest/eslint-plugin@1.6.27':
+    resolution: {integrity: sha512-X1RCAfwbatG4GFbJ/1PIHP9MSZMt0JJThqbYID+vS4L783k6QGlLPe421wQE8dHXuGCcenVLsydiM4qzsYWxhg==}
     engines: {node: '>=18'}
     peerDependencies:
+      '@typescript-eslint/eslint-plugin': '*'
       eslint: '>=8.57.0'
       typescript: '>=5.0.0'
       vitest: '*'
     peerDependenciesMeta:
+      '@typescript-eslint/eslint-plugin':
+        optional: true
       typescript:
         optional: true
       vitest:
@@ -2487,6 +2490,7 @@ packages:
   eslint@9.39.0:
     resolution: {integrity: sha512-iy2GE3MHrYTL5lrCtMZ0X1KLEKKUjmK0kzwcnefhR66txcEmXZD2YWgR5GNdcEwkNx3a0siYkSvl0vIC+Svjmg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -5838,12 +5842,13 @@ snapshots:
       tinyrainbow: 3.1.0
       vitest: 4.1.0(@types/node@24.13.3)(vite@8.0.10(@types/node@24.13.3)(esbuild@0.25.12)(jiti@2.7.0)(yaml@2.9.0))
 
-  '@vitest/eslint-plugin@1.5.0(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2)(vitest@4.1.0(@types/node@24.13.3)(vite@8.0.10(@types/node@24.13.3)(esbuild@0.25.12)(jiti@2.7.0)(yaml@2.9.0)))':
+  '@vitest/eslint-plugin@1.6.27(@typescript-eslint/eslint-plugin@8.41.0(@typescript-eslint/parser@8.41.0(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2))(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2))(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2)(vitest@4.1.0(@types/node@24.13.3)(vite@8.0.10(@types/node@24.13.3)(esbuild@0.25.12)(jiti@2.7.0)(yaml@2.9.0)))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.63.0
       '@typescript-eslint/utils': 8.63.0(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2)
       eslint: 9.39.0(jiti@2.7.0)
     optionalDependencies:
+      '@typescript-eslint/eslint-plugin': 8.41.0(@typescript-eslint/parser@8.41.0(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2))(eslint@9.39.0(jiti@2.7.0))(typescript@5.9.2)
       typescript: 5.9.2
       vitest: 4.1.0(@types/node@24.13.3)(vite@8.0.10(@types/node@24.13.3)(esbuild@0.25.12)(jiti@2.7.0)(yaml@2.9.0))
     transitivePeerDependencies:
