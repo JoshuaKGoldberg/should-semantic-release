@@ -8,12 +8,15 @@ importers:
 
   .:
     dependencies:
-      '@pkgjs/parseargs':
-        specifier: ^0.11.0
-        version: 0.11.0
       conventional-commits-parser:
         specifier: ^6.2.1
         version: 6.4.0
+      parse-standard-args:
+        specifier: link:../parse-standard-args
+        version: link:../parse-standard-args
+      zod:
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       '@eslint-community/eslint-plugin-eslint-comments':
         specifier: 4.7.1
@@ -30,9 +33,6 @@ importers:
       '@types/node':
         specifier: 24.13.3
         version: 24.13.3
-      '@types/pkgjs__parseargs':
-        specifier: 0.10.3
-        version: 0.10.3
       '@vitest/coverage-v8':
         specifier: 4.1.0
         version: 4.1.0(vitest@4.1.0(@types/node@24.13.3)(vite@8.0.10(@types/node@24.13.3)(esbuild@0.25.12)(jiti@2.7.0)(yaml@2.9.0)))
@@ -1241,10 +1241,6 @@ packages:
     resolution: {integrity: sha512-oeQJs1aa8Ghke8JIK9yuq/+KjMiaYeDZ38jx7MhkXncXlUKjqQ3wEm2X3qCKyjo+ZZofZj+WsEEiqkTtRuE2xQ==}
     engines: {node: ^20.9.0 || >=22.0.0, npm: '>=10.8.2'}
 
-  '@pkgjs/parseargs@0.11.0':
-    resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
-    engines: {node: '>=14'}
-
   '@pkgr/core@0.2.9':
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
@@ -1612,9 +1608,6 @@ packages:
   '@types/parse-path@7.1.0':
     resolution: {integrity: sha512-EULJ8LApcVEPbrfND0cRQqutIOdiIgJ1Mgrhpy755r14xMohPTEpkV/k28SJvuOs9bHRFW8x+KeDAEPiGQPB9Q==}
     deprecated: This is a stub types definition. parse-path provides its own type definitions, so you do not need this installed.
-
-  '@types/pkgjs__parseargs@0.10.3':
-    resolution: {integrity: sha512-LTPaoYudJDCmo6am9DaX822/Hhz75Ae3c1qh4D5BiVNHWkseTggAxy96qAOdfUaxkSPbFjpkUTm228VGNUwSsQ==}
 
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
@@ -4420,8 +4413,8 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.4.2:
-    resolution: {integrity: sha512-IynmDyxsEsb9RKzO3J9+4SxXnl2FTFSzNBaKKaMV6tsSk0rw9gYw9gs+JFCq/qk2LCZ78KDwyj+Z289TijSkUw==}
+  zod@4.6.5:
+    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
 
 snapshots:
 
@@ -5451,8 +5444,6 @@ snapshots:
 
   '@phun-ky/typeof@2.0.3': {}
 
-  '@pkgjs/parseargs@0.11.0': {}
-
   '@pkgr/core@0.2.9': {}
 
   '@release-it/conventional-changelog@11.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(release-it@20.2.1(@types/node@24.13.3)(magicast@0.5.2))':
@@ -5700,8 +5691,6 @@ snapshots:
   '@types/parse-path@7.1.0':
     dependencies:
       parse-path: 7.1.0
-
-  '@types/pkgjs__parseargs@0.10.3': {}
 
   '@types/unist@2.0.11': {}
 
@@ -7354,7 +7343,7 @@ snapshots:
       tinyglobby: 0.2.17
       unbash: 4.0.2
       yaml: 2.9.0
-      zod: 4.4.2
+      zod: 4.6.5
 
   ky@1.14.3: {}
 
@@ -8856,8 +8845,8 @@ snapshots:
 
   zod-tsconfig@0.2.0:
     dependencies:
-      zod: 4.4.2
+      zod: 4.6.5
 
   zod@3.25.76: {}
 
-  zod@4.4.2: {}
+  zod@4.6.5: {}
