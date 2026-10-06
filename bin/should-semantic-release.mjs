@@ -3,7 +3,8 @@
 import { shouldSemanticReleaseCLI } from "../lib/cli.js";
 
 try {
-	if (!(await shouldSemanticReleaseCLI(process.argv.slice(2)))) {
+	// undefined means help or an args error was printed (and exitCode set).
+	if ((await shouldSemanticReleaseCLI(process.argv.slice(2))) === false) {
 		process.exitCode = 1;
 	}
 } catch (error) {
