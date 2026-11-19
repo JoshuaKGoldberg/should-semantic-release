@@ -16,7 +16,8 @@ const settings = {
 			.meta({ short: "v" }),
 	}),
 	// Unknown flags and positionals are ignored, as they were before this CLI
-	// used parse-standard-args, so existing CI invocations keep working.
+	// used parse-standard-args, so extra args in existing CI invocations keep
+	// working. Invalid values for known flags, such as --verbose=yes, are errors.
 	strict: false,
 };
 

@@ -39,7 +39,7 @@
 	"dependencies": {
 		"conventional-commits-parser": "^6.2.1",
 		"parse-standard-args": "^0.3.0",
-		"zod": "^4.6.5"
+		"zod": "^4.2.0"
 	},
 	"devDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "4.7.1",
