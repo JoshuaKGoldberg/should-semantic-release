@@ -1,9 +1,9 @@
-import { createCli } from "parse-standard-args";
+import { parseStandardArgv } from "parse-standard-args";
 import { z } from "zod";
 
 import { shouldSemanticRelease } from "./shouldSemanticRelease.js";
 
-const cli = createCli({
+const settings = {
 	description:
 		"Checks whether a semantic release should be run for a repository.",
 	footer: "Exits with code 1 if a release should not be run.",
@@ -18,7 +18,7 @@ const cli = createCli({
 	// Unknown flags and positionals are ignored, as they were before this CLI
 	// used parse-standard-args, so existing CI invocations keep working.
 	strict: false,
-});
+};
 
 /**
  * Runs should-semantic-release with command-line args.
@@ -27,9 +27,16 @@ const cli = createCli({
  * args error was printed instead.
  */
 export async function shouldSemanticReleaseCLI(args: string[]) {
-	const parsed = await cli.run(args);
+	const parsed = parseStandardArgv(args, settings);
 
-	if (!parsed) {
+	if (parsed.type === "error") {
+		console.error(parsed.text);
+		process.exitCode = 1;
+		return undefined;
+	}
+
+	if (parsed.type !== "values") {
+		console.log(parsed.text);
 		return undefined;
 	}
 

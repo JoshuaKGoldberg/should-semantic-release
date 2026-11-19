@@ -92,7 +92,7 @@ describe("cli", () => {
 		expect(error.mock.calls).toMatchInlineSnapshot(`
 			[
 			  [
-			    "--verbose does not take a value.
+			    "--verbose: Expected true or false, received "yes".
 			Run 'should-semantic-release --help' for usage.",
 			  ],
 			]
