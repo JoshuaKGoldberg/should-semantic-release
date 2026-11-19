@@ -100,7 +100,6 @@ describe("cli", () => {
 	});
 });
 
-// console-fail-test fails tests that call console methods, so they're replaced.
 function stubConsole(method: "error" | "log") {
 	const mock = vi.fn();
 
