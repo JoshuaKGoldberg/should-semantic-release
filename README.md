@@ -29,8 +29,9 @@ if npx should-semantic-release; then npx release-it; fi
 
 This can be useful, for example, to [prevent a `release-it` release](https://github.com/release-it/release-it/issues/969).
 
-`should-semantic-release` accepts the following CLI flag:
+`should-semantic-release` accepts the following CLI flags:
 
+- `-h`/`--help`: Print usage information and exit
 - `-v`/`--verbose` _(default: `false`)_: Whether to log debug information to the console
 
 ```plaintext
