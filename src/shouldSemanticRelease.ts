@@ -1,6 +1,6 @@
-import { getCommitMeaning } from "./getCommitMeaning.js";
-import { ShouldSemanticReleaseOptions } from "./types.js";
-import { execOrThrow } from "./utils.js";
+import { getCommitMeaning } from "./getCommitMeaning.ts";
+import { ShouldSemanticReleaseOptions } from "./types.ts";
+import { execOrThrow } from "./utils.ts";
 
 export async function shouldSemanticRelease({
 	verbose,

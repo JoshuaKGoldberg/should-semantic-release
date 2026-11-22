@@ -83,6 +83,5 @@
   ],
   "projectName": "should-semantic-release",
   "projectOwner": "JoshuaKGoldberg",
-  "repoType": "github",
-  "commitConvention": "angular"
+  "repoType": "github"
 }

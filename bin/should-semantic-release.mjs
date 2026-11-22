@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { shouldSemanticReleaseCLI } from "../lib/cli.js";
+import { shouldSemanticReleaseCLI } from "../dist/cli.js";
 
 try {
 	if (!(await shouldSemanticReleaseCLI(process.argv.slice(2)))) {

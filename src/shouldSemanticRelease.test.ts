@@ -1,16 +1,16 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { shouldSemanticRelease } from "./shouldSemanticRelease.js";
+import { shouldSemanticRelease } from "./shouldSemanticRelease.ts";
 
 const mockExecOrThrow = vi.fn();
 
-vi.mock("./utils.js", () => ({
+vi.mock("./utils.ts", () => ({
 	get execOrThrow() {
 		return mockExecOrThrow;
 	},
 }));
 
-describe("shouldSemanticRelease", () => {
+describe(shouldSemanticRelease, () => {
 	it("returns false when a release commit is found first", async () => {
 		mockExecOrThrow.mockResolvedValue(`release v1.2.3`);
 

@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 import { describe, expect, it, vi } from "vitest";
 
-import { execOrThrow } from "./utils.js";
+import { execOrThrow } from "./utils.ts";
 
 const mockExec = vi.fn();
 
@@ -14,15 +14,15 @@ vi.mock("node:child_process", () => ({
 	},
 }));
 
-describe("execOrThrow", () => {
+describe(execOrThrow, () => {
 	it("throws an error when exec prints to stderr", async () => {
 		mockExec.mockImplementation((command, callback) => {
 			callback(null, { stderr: "Oh no!" });
 		});
 
-		await expect(
-			async () => await execOrThrow("ls"),
-		).rejects.toMatchInlineSnapshot(`[Error: Oh no!]`);
+		await expect(execOrThrow("ls")).rejects.toMatchInlineSnapshot(
+			`[Error: Oh no!]`,
+		);
 	});
 
 	it("returns stdout when exec doesn't print to stderr", async () => {
