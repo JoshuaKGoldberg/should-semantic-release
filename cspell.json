@@ -6,7 +6,6 @@
 		"CHANGELOG.md",
 		"coverage",
 		"dist",
-		"lib",
 		"node_modules",
 		"pnpm-lock.yaml"
 	],
@@ -22,9 +21,7 @@
 		"conventionalcommits",
 		"knip",
 		"lcov",
-		"markdownlintignore",
 		"mshick",
-		"npmpackagejsonlintrc",
 		"octoguide",
 		"outro",
 		"packagejson",
@@ -33,7 +30,6 @@
 		"pkgjs",
 		"quickstart",
 		"stefanzweifel",
-		"tsup",
 		"wontfix",
 		"zizmor",
 		"zizmorcore"
