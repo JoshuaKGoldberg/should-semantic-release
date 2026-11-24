@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.6](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.5...0.3.6) (2026-11-24)
+
+### Bug Fixes
+
+- bump to create-typescript-app@2.87.18 ([#955](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/955)) ([957f92c](https://github.com/JoshuaKGoldberg/should-semantic-release/commit/957f92cea7250be1e39b8a47b4d4ea7fdbe5c186)), closes [#954](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/954)
+
 ## [0.3.5](https://github.com/JoshuaKGoldberg/should-semantic-release/compare/0.3.4...0.3.5) (2025-11-11)
 
 ### Bug Fixes
