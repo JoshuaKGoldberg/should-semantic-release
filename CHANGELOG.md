@@ -25,7 +25,7 @@
 
 - should recognise breaking changes ([#533](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/533)) ([2dfeee8](https://github.com/JoshuaKGoldberg/should-semantic-release/commit/2dfeee8f3ccd48e5952545538eb906a72e137bba)), closes [#507](https://github.com/JoshuaKGoldberg/should-semantic-release/issues/507)
 
-# 0.3.0 (2024-02-18)
+## 0.3.0 (2024-02-18)
 
 ### Bug Fixes
 

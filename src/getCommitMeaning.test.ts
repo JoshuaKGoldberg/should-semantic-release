@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 
-import { getCommitMeaning } from "./getCommitMeaning.js";
+import { getCommitMeaning } from "./getCommitMeaning.ts";
 
-describe("getCommitMeaning", () => {
+describe(getCommitMeaning, () => {
 	it.each([
 		["chore", { type: undefined }],
 		["chore: deps", { type: "chore" }],

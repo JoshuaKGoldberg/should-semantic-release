@@ -1,2 +1,2 @@
-export * from "./cli.js";
-export * from "./shouldSemanticRelease.js";
+export * from "./cli.ts";
+export * from "./shouldSemanticRelease.ts";

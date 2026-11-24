@@ -1,6 +1,6 @@
 import { parseArgs } from "@pkgjs/parseargs";
 
-import { shouldSemanticRelease } from "./shouldSemanticRelease.js";
+import { shouldSemanticRelease } from "./shouldSemanticRelease.ts";
 
 export async function shouldSemanticReleaseCLI(args: string[]) {
 	const { values } = parseArgs({

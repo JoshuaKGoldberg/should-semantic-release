@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { shouldSemanticReleaseCLI } from "./cli.js";
-import { shouldSemanticRelease } from "./shouldSemanticRelease.js";
+import { shouldSemanticReleaseCLI } from "./cli.ts";
+import { shouldSemanticRelease } from "./shouldSemanticRelease.ts";
 
 vi.mock("./shouldSemanticRelease");
 
